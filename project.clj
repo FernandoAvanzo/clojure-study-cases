@@ -4,6 +4,6 @@
   :dependencies [[org.clojure/clojure "1.10.3"]]
   :plugins [[lein-tar "3.3.0"]]
   :source-paths ["src" "src/main/clojure"]
-  :test-paths ["test" "src/test/clojure"]
-  :resources-paths ["src/main/resource"]
+  :test-paths ["test" "test/main/clojure"]
+  :resources-paths ["resources"]
   )
