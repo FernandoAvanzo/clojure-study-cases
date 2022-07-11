@@ -1,7 +1,7 @@
 ;;todo fazer esse codigo rodar
-(ns SamplesChapter01
-  (. "foo" toUpperCase)
-  (Math/abs -3)
-  Math/PI
-  (new Integer 42)
-  )
+(ns SamplesChapter01)
+
+(. "foo" toUpperCase)
+(new Integer 42)
+(Math/abs -3)
+(Math/PI)
