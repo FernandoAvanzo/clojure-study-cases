@@ -5,5 +5,4 @@
   :plugins [[lein-tar "3.3.0"]]
   :source-paths ["src" "src/main/clojure"]
   :test-paths ["test" "test/main/clojure"]
-  :resources-paths ["resources"]
-  )
+  :resources-paths ["resources"])
