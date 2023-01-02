@@ -1,6 +1,7 @@
 (ns SamplesChapter02)
 
 (comment
+  ;; define a function with def
   (def my-addition (fn [a b] (+ a b)))
 
   (println "hello world")
