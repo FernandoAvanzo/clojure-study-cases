@@ -29,4 +29,10 @@
 
   ;java interop example
   (.contains "clojure-in-action" "-")
-  (.endsWith "program.clj" ".clj"))
+  (.endsWith "program.clj" ".clj")
+
+  ;clojure contagiousness principle example
+  (+ 1 1N)
+  (+ 1 1N 1/2)
+  (+ 1 1N 1/2 0.5M)
+  (+ 1 1N 1/2 0.5M 0.5))
