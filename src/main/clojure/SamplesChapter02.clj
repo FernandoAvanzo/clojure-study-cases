@@ -35,4 +35,10 @@
   (+ 1 1N)
   (+ 1 1N 1/2)
   (+ 1 1N 1/2 0.5M)
-  (+ 1 1N 1/2 0.5M 0.5))
+  (+ 1 1N 1/2 0.5M 0.5)
+
+  ;clojure number overflow example
+  (inc 9223372036854775807)
+
+  ;clojure auto-promotion example
+  (inc' 9223372036854775807))
