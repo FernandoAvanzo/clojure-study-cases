@@ -28,4 +28,3 @@
   ;java interop example
   (.contains "clojure-in-action" "-")
   (.endsWith "program.clj" ".clj"))
-
