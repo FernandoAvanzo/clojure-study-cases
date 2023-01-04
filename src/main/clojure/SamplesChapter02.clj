@@ -54,4 +54,10 @@
   ;=> nil
   (name "baz")
   ;=> "baz"
+
+  ;Use the list function to create a list and the list? function to test for list types:
+  (list 1 2 3 4 5)
+  ;=> (1 2 3 4 5)
+  (list? *1)
+  ;=> true
   )
