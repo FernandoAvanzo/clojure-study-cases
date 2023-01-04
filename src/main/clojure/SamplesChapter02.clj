@@ -60,4 +60,8 @@
   ;=> (1 2 3 4 5)
   (list? *1)
   ;=> true
+
+  ;Use the conj function to create a new list with another value added to it:
+  (conj (list 1 2 3 4 5) 6)
+  ;=> (1 2 3 4 5 6)
   )
