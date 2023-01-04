@@ -41,4 +41,17 @@
   (inc 9223372036854775807)
 
   ;clojure auto-promotion example
-  (inc' 9223372036854775807))
+  (inc' 9223372036854775807)
+
+  ;clojure keyword, symbol, name and namespace functions
+  (keyword "foo")
+  ;=> :foo
+  (symbol "foo" "bar")
+  ;=> foo/bar
+  (name :foo/bar)
+  ;=> "bar"
+  (namespace :foo)
+  ;=> nil
+  (name "baz")
+  ;=> "baz"
+  )
