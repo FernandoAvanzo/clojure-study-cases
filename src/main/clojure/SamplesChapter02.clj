@@ -63,5 +63,9 @@
 
   ;Use the conj function to create a new list with another value added to it:
   (conj (list 1 2 3 4 5) 6)
-  ;=> (1 2 3 4 5 6)
+  ;=> (6 1 2 3 4 5)
+  (conj (list 1 2 3) 4 5 6)
+  ;=> (6 5 4 1 2 3)
+  (conj (conj (conj (list 1 2 3) 4) 5) 6)
+  ;=> (6 5 4 1 2 3)  same as above
   )
