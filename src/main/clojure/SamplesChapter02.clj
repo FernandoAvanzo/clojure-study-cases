@@ -89,4 +89,8 @@
   (+  1 2 3)
   ;=> 6 that call function can be interpreted as a list
   ; where the head is the function and the tail is the arguments
+
+  ;Do not forget of the leading single quote
+  (def three-numbers '(1 2 3))
+  ;=> #'SamplesChapter02/three-numbers
   )
