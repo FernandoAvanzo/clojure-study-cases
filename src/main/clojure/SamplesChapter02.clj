@@ -68,4 +68,14 @@
   ;=> (6 5 4 1 2 3)
   (conj (conj (conj (list 1 2 3) 4) 5) 6)
   ;=> (6 5 4 1 2 3)  same as above
+
+  ;treating lists like stacks
+  (peek (list 1 2 3))
+  ;=> 1
+  (pop (list 1 2 3))
+  ;=> (2 3)
+  (peek (list))
+  ;=> nil Head of an empty list is nil
+  (pop (list))
+  ;=> IllegalStateException Can't pop empty list
   )
