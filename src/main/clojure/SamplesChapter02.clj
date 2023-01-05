@@ -78,4 +78,10 @@
   ;=> nil Head of an empty list is nil
   (pop (list))
   ;=> IllegalStateException Can't pop empty list
+
+  ;using the count function
+  (count (list))
+  ;=> 0
+  (count (list 1 2 3 4))
+  ;=> 4
   )
