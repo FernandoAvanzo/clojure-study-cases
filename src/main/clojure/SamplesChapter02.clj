@@ -84,4 +84,9 @@
   ;=> 0
   (count (list 1 2 3 4))
   ;=> 4
+
+  ;everything is a list
+  (+  1 2 3)
+  ;=> 6 that call function can be interpreted as a list
+  ; where the head is the function and the tail is the arguments
   )
