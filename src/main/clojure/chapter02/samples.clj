@@ -99,4 +99,14 @@
   ;=> [10 20 30 40 50]
   (def the-vector [10 20 30 40 50])
   ;=> #'chapter02.samples/the-vector
+
+  ;Using the function get and nth
+  (get the-vector 2)
+  ;=> 30
+  (nth the-vector 2)
+  ;=> 30
+  (get the-vector 10)
+  ;=> nil
+  (nth the-vector 10)
+  ;=> IndexOutOfBoundsException
   )
