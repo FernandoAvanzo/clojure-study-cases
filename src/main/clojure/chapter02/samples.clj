@@ -131,4 +131,8 @@
   ;=> nil Peeking an empty collection always returns nil.
   (pop [])
   ;=> IndexOutOfBoundsException Popping an empty collection always throws an exception.
+
+  ;vectors working as function
+  (the-vector 3)
+  ;=> 40
   )
