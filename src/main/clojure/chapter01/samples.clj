@@ -1,4 +1,4 @@
-(ns SamplesChapter01)
+(ns chapter01.samples)
 
 (comment
   (. "foo" toUpperCase)

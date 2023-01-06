@@ -1,4 +1,4 @@
-(ns SamplesChapter02)
+(ns chapter02.samples)
 
 (comment
   ;; clojure hello world
