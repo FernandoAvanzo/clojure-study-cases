@@ -109,4 +109,12 @@
   ;=> nil
   (nth the-vector 10)
   ;=> IndexOutOfBoundsException
+
+  ;Using assoc to modify a vector
+  (assoc the-vector 2 25)
+  ;=> [10 20 25 40 50] You can change an existing index.
+  (assoc the-vector 5 60)
+  ;=> [10 20 30 40 50 60] You can add on to the end.
+  (assoc the-vector 6 70)
+  ;=> IndexOutOfBoundsException You can’t add past the end.
   )
