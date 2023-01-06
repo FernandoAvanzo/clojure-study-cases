@@ -117,4 +117,8 @@
   ;=> [10 20 30 40 50 60] You can add on to the end.
   (assoc the-vector 6 70)
   ;=> IndexOutOfBoundsException You can’t add past the end.
+
+  ;conj function applied in vectors
+  (conj [1 2 3 4 5] 6)
+  ;=> [1 2 3 4 5 6]
   )
