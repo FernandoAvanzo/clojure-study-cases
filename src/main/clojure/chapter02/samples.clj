@@ -93,4 +93,10 @@
   ;Do not forget of the leading single quote
   (def three-numbers '(1 2 3))
   ;=> #'SamplesChapter02/three-numbers
+
+  ;declaring vectors
+  (vector 10 20 30 40 50)
+  ;=> [10 20 30 40 50]
+  (def the-vector [10 20 30 40 50])
+  ;=> #'chapter02.samples/the-vector
   )
