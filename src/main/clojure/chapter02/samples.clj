@@ -121,4 +121,14 @@
   ;conj function applied in vectors
   (conj [1 2 3 4 5] 6)
   ;=> [1 2 3 4 5 6]
+
+  ;using peek and pop functions in vectors
+  (peek [1 2])
+  ;=> 2
+  (pop [1 2])
+  ;=> [1]
+  (peek [])
+  ;=> nil Peeking an empty collection always returns nil.
+  (pop [])
+  ;=> IndexOutOfBoundsException Popping an empty collection always throws an exception.
   )
