@@ -135,4 +135,8 @@
   ;vectors working as function
   (the-vector 3)
   ;=> 40
+
+  ;common clojure map declaration
+  (def the-map {:a 1 :b 2 :c 3})
+  ;=> #'chapter02.samples/the-map
   )
