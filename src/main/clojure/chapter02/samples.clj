@@ -139,4 +139,8 @@
   ;common clojure map declaration
   (def the-map {:a 1 :b 2 :c 3})
   ;=> #'chapter02.samples/the-map
+
+  ;Using the hash-map function to declare a map
+  (hash-map :a 1 :b 2 :c 3)
+  ;=> {:c 3, :b 2, :a 1}
   )
