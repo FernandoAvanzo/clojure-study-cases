@@ -86,7 +86,7 @@
   ;=> 4
 
   ;everything is a list
-  (+  1 2 3)
+  (+ 1 2 3)
   ;=> 6 that call function can be interpreted as a list
   ; where the head is the function and the tail is the arguments
 
@@ -161,4 +161,15 @@
   ;=> {:a 1, :b 2, :c 3, :d 4}
   (dissoc updated-map :a)
   ;=> {:b 2, :c 3, :d 4}
+
+  ;Clojure nested maps are a immutable Data Structures sample.
+  (def users {:kyle {
+                     :date-joined "2009-01-01"
+                     :summary     {
+                                   :average {
+                                             :monthly 1000
+                                             :yearly  12000
+                                             }
+                                   }}})
+  ;=> #'chapter02.samples/users
   )
