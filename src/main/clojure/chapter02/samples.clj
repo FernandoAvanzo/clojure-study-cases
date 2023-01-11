@@ -180,4 +180,8 @@
   ;get-in function
   (get-in users [:kyle :summary :average :monthly])
   ;=> 1000
+
+  ;update-in function
+  (update-in users [:kyle :summary :average :monthly] + 500)
+  ;=> {:kyle {:date-joined "2009-01-01", :summary {:average {:monthly 1500, :yearly 12000}}}}
   )
