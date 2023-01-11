@@ -172,4 +172,8 @@
                                              }
                                    }}})
   ;=> #'chapter02.samples/users
+
+  ;assoc-in function
+  (assoc-in users [:kyle :summary :average :monthly] 3000)
+  ;=> {:kyle {:date-joined "2009-01-01", :summary {:average {:monthly 3000, :yearly 12000}}}}
   )
