@@ -143,4 +143,8 @@
   ;Using the hash-map function to declare a map
   (hash-map :a 1 :b 2 :c 3)
   ;=> {:c 3, :b 2, :a 1}
+
+  ;maps also are functions
+  (the-map :b)
+  ;=> 2
   )
