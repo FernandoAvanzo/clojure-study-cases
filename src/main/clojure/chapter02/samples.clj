@@ -153,4 +153,12 @@
   ;=> 2
   (:z the-map 26)
   ;=> 26 Keywords can also return a default value if not found.
+
+  ;using assoc and dissoc functions
+  (def updated-map (assoc the-map :d 4))
+  ;=> #'chapter02.samples/updated-map
+  updated-map
+  ;=> {:a 1, :b 2, :c 3, :d 4}
+  (dissoc updated-map :a)
+  ;=> {:b 2, :c 3, :d 4}
   )
