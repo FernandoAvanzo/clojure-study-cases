@@ -147,4 +147,10 @@
   ;maps also are functions
   (the-map :b)
   ;=> 2
+
+  ;Keywords and map acting as functions
+  (:b the-map)
+  ;=> 2
+  (:z the-map 26)
+  ;=> 26 Keywords can also return a default value if not found.
   )
