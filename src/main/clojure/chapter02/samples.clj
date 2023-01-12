@@ -186,9 +186,9 @@
   ;=> {:kyle {:date-joined "2009-01-01", :summary {:average {:monthly 1500, :yearly 12000}}}}
 
   ;Using the functions first and rest
-  (first (list 1 2 3 ))
+  (first (list 1 2 3))
   ;=> 1
-  (rest (list 1 2 3 ))
+  (rest (list 1 2 3))
   ;=> (2 3)
   (first [1 2 3])
   ;=> 1
@@ -214,5 +214,11 @@
   ;define function with defn macro
   (defn addition-function [a b]
     (+ a b))
+  ;=> #'chapter02.samples/addition-function
+
+  ;define function with def and fn
+  (def addition-function
+    (fn [a b]
+      (+ a b)))
   ;=> #'chapter02.samples/addition-function
   )
