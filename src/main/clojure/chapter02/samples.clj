@@ -207,4 +207,7 @@
   (cons 1 [2 3 4 5])
   ;=> (1 2 3 4 5)
 
+  ;Lazy evaluation with sequences
+  (list? (cons 1 (list 2 3)))
+  ;=> false
   )
