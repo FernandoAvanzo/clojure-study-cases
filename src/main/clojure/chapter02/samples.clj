@@ -184,4 +184,22 @@
   ;update-in function
   (update-in users [:kyle :summary :average :monthly] + 500)
   ;=> {:kyle {:date-joined "2009-01-01", :summary {:average {:monthly 1500, :yearly 12000}}}}
+
+  ;Using the functions first and rest
+  (first (list 1 2 3 ))
+  ;=> 1
+  (rest (list 1 2 3 ))
+  ;=> (2 3)
+  (first [1 2 3])
+  ;=> 1
+  (rest [1 2 3])
+  ;=> (2 3)
+  (first {:a 1 :b 2})
+  ;=> [:a 1] Order of items isn’t guaranteed.
+  (rest {:a 1 :b 2})
+  ;=> ([:b 2])
+  (first [])
+  ;=> nil Empty collections return nil for first.
+  (rest [])
+  ;=> () Empty collections return an empty sequence for rest.
   )
