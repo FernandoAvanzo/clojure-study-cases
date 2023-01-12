@@ -202,4 +202,9 @@
   ;=> nil Empty collections return nil for first.
   (rest [])
   ;=> () Empty collections return an empty sequence for rest.
+
+  ;given an element and data structure cons create a new sequence
+  (cons 1 [2 3 4 5])
+  ;=> (1 2 3 4 5)
+
   )
