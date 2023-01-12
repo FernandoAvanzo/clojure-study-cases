@@ -210,4 +210,9 @@
   ;Lazy evaluation with sequences
   (list? (cons 1 (list 2 3)))
   ;=> false
+
+  ;define function with defn macro
+  (defn addition-function [a b]
+    (+ a b))
+  ;=> #'chapter02.samples/addition-function
   )
