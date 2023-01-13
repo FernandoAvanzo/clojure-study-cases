@@ -1,4 +1,5 @@
-(ns chapter02.samples)
+(ns chapter02.samples
+  (:require [chapter02.helpers.stubs :as stub]))
 
 (comment
   ;; clojure hello world
@@ -266,4 +267,15 @@
   (average-pets)
   ;Pet counts: (1 2 3)
   ;=> 2
+
+  ;using do to work with side-effects in a multiple s-expression
+  (if (stub/is-something-true?)
+    (do
+      (stub/log-message "is true branch")
+      (stub/store-something-in-db)
+      (stub/return-useful-value))
+    :else)
+  ;is true branch
+  ;Storing something in the database
+  ;=> 42
   )
