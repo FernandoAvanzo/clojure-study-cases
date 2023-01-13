@@ -221,4 +221,12 @@
     (fn [a b]
       (+ a b)))
   ;=> #'chapter02.samples/addition-function
+
+  ;average number of pets owned by users
+  (def users {:me 1 :you 2 :them 3})
+  ;=> #'chapter02.samples/users
+  (defn average-pets []
+    (/ (apply + (vals users))
+       (count users)))
+  ;=> #'chapter02.samples/average-pets
   )
