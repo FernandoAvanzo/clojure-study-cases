@@ -254,4 +254,16 @@
         z (+ x y)]
     z)
   ;=> 3
+
+  ;using underscore (_) for print a let binding expression
+  (defn average-pets []
+    (let [user-data (vals users)
+          pet-counts (map :pets user-data)
+          _ (println "Pet counts:" pet-counts)
+          total (apply + pet-counts)]
+      (/ total (count users))))
+  ;=> #'chapter02.samples/average-pets
+  (average-pets)
+  ;Pet counts: (1 2 3)
+  ;=> 2
   )
