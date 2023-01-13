@@ -255,7 +255,7 @@
     z)
   ;=> 3
 
-  ;using underscore (_) for print a let binding expression
+  ;using underscore (_) for print a let binding expression in average-pets
   (defn average-pets []
     (let [user-data (vals users)
           pet-counts (map :pets user-data)
