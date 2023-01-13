@@ -247,4 +247,11 @@
   ;is the same as
   (+ 1 2)
   ;=> 3
+
+  ;using let to name things locally
+  (let [x 1
+        y 2
+        z (+ x y)]
+    z)
+  ;=> 3
   )
