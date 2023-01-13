@@ -223,10 +223,28 @@
   ;=> #'chapter02.samples/addition-function
 
   ;average number of pets owned by users
-  (def users {:me 1 :you 2 :them 3})
+  (def users {:me {:pets 1}
+              :you {:pets 2}
+              :them {:pets 3}})
   ;=> #'chapter02.samples/users
   (defn average-pets []
     (/ (apply + (vals users))
        (count users)))
   ;=> #'chapter02.samples/average-pets
+
+  ;refactor average-pets using let
+  (defn average-pets []
+    (let [user-data (vals users)
+          pet-counts (map :pets user-data)
+          total (apply + pet-counts)]
+      (/ total (count users))))
+  ;=> #'chapter02.samples/average-pets
+  ;apply calls a function with items of
+  ;a sequence as individual arguments;
+  ;for example,
+  (apply + [1 2])
+  ;=> 3
+  ;is the same as
+  (+ 1 2)
+  ;=> 3
   )
