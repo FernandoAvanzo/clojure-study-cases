@@ -297,4 +297,15 @@
     (= x 0) "equal!"
     :else "lesser!")
   ;=> "greater!"
+
+  ;sample use of when macro
+  (when (> 5 2)
+    (println "five")
+    (println "is")
+    (println "greater")
+    "done")
+  ;five
+  ;is
+  ;greater
+  ;=> "done"
   )
