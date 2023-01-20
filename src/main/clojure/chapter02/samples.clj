@@ -308,4 +308,15 @@
   ;is
   ;greater
   ;=> "done"
+
+  ;when-not form sample use
+  (when-not (< 5 2)
+    (println "two")
+    (println "is")
+    (println "smaller")
+    "done")
+  ;two
+  ;is
+  ;smaller
+  ;=> "done"
   )
