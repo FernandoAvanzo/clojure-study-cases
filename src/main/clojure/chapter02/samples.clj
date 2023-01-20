@@ -288,4 +288,13 @@
   ;if-not sample
   (if-not (> 5 2) "yes" "no")
   ;=> "no"
+
+  ;cond use sample
+  (def x 1)
+  ;=> #'chapter02.samples/x
+  (cond
+    (> x 0) "greater!"
+    (= x 0) "equal!"
+    :else "lesser!")
+  ;=> "greater!"
   )
