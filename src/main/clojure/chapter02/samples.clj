@@ -278,4 +278,14 @@
   ;is true branch
   ;Storing something in the database
   ;=> 42
+
+  ;if use sample
+  (if (> 5 2)
+    "yes"
+    "no")
+  ;=> "yes"
+
+  ;if-not sample
+  (if-not (> 5 2) "yes" "no")
+  ;=> "no"
   )
