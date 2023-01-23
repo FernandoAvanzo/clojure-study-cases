@@ -332,4 +332,16 @@
   (and 0 "")
   ;=> ""
   ;Remember, in Clojure only nil and false are logically false; everything else is true.
+
+  ;sample of logical operator or
+  (or)
+  ;=> nil
+  (or :a :b :c)
+  ;=> :a
+  (or :a nil :c)
+  ;=> :a
+  (or nil false)
+  ;=> false
+  (or false nil)
+  ;=> nil
   )
