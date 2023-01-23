@@ -319,4 +319,17 @@
   ;is
   ;smaller
   ;=> "done"
+
+  ;sample of logical operator and
+  (and)
+  ;=> true
+  (and :a :b :c)
+  ;=> :c
+  (and :a nil :c)
+  ;=> nil
+  (and :a false :c)
+  ;=> false
+  (and 0 "")
+  ;=> ""
+  ;Remember, in Clojure only nil and false are logically false; everything else is true.
   )
