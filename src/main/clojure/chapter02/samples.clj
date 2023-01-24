@@ -358,4 +358,14 @@
   ;=> true
   (< 2 4 3 8)
   ;=> false
+
+  ;the inconsistency of = when comparing numbers of different classes
+  (= 1 1N 1/1)
+  ;=> true
+  (= 0.5 1/2)
+  ;=> false
+  (= 0.5M 0.5)
+  ;=> false
+  (= 0.5M 1/2)
+  ;=> false
   )
