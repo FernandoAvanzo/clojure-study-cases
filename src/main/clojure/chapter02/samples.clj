@@ -368,4 +368,16 @@
   ;=> false
   (= 0.5M 1/2)
   ;=> false
+
+  ;using == to compare numbers of different classes
+  (== 1 1N 1/1)
+  ;=> true
+  (== 1/2 0.5M 0.5)
+  ;=> true
+  1.99999999999999999
+  ;=> 2.0
+  ;Numbers in different categories now compare roughly how you’d expect.
+  (== 2.0M 1.99999999999999999)
+  ;=> true
+  ;But == isn’t a magic wand against floating-point precision and rounding behavior.
   )
