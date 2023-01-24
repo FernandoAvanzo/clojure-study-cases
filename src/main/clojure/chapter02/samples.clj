@@ -380,4 +380,9 @@
   (== 2.0M 1.99999999999999999)
   ;=> true
   ;But == isn’t a magic wand against floating-point precision and rounding behavior.
+
+  ;using while function
+  (while (stub/request-on-queue?)
+    (stub/handle-request (stub/pop-request-queue)))
+  ;=>nil
   )
