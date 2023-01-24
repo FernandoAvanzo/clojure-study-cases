@@ -352,4 +352,10 @@
   ;=> false
   (not nil)
   ;=> true
+
+  ;clojure functions for comparison and equality
+  (< 2 4 6 8)
+  ;=> true
+  (< 2 4 3 8)
+  ;=> false
   )
