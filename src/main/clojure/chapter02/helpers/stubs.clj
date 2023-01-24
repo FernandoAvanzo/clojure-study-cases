@@ -11,3 +11,11 @@
 
 (defn return-useful-value []
   42)
+(defn request-on-queue? []
+  false)
+
+(defn pop-request-queue []
+  {})
+
+(defn handle-request [request]
+  (println "Handling request" request))
