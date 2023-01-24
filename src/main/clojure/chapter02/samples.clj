@@ -344,4 +344,12 @@
   ;=> false
   (or false nil)
   ;=> nil
+
+  ;clojure function not
+  (not true)
+  ;=> false
+  (not 1)
+  ;=> false
+  (not nil)
+  ;=> true
   )
